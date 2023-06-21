@@ -10,7 +10,12 @@ int main()
 	}
 	catch (int a) {
 		//blok ini akan dieksekusi
-		cout << "Pengcualian akan dieksekusi" < endl;
+		cout << "Pengcualian akan dieksekusi" << endl;
 	}
+	catch (...) {
+		/*jika selain integer maka blok ini akan dieksekusi*/
+		cout << "Defult Pengecualian dieksekusi" << endl;
+	}
+	return 0;
 
 }
