@@ -15,6 +15,7 @@ int main() {
 	outfile.open(NamaFile + ".txt", ios::out);
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+	
 	//inlimited loop untuk menulis
 	while (true) {
 		cout << "- ";
@@ -25,6 +26,18 @@ int main() {
 		// menulis dan memasukan nilai dari 'baris' ke dalam file
 		outfile << baris << endl;
 	}
+	
 	// selesai dalam menulis sekarang tutup filenya
 	outfile.close();
+
+	
+	// Membuka file dalam mode membaca
+	ifstream infile;
+
+	// Merunjuk ke sebuah file
+	infile.open(NamaFile, ios::in);
+	
+	cout << endl << ">= Membuka dan membaca file " << endl;
+	
+
 }
